@@ -1,19 +1,19 @@
 :root {
-  color-scheme: dark;
-  --bg: #050b12;
-  --bg-elevated: #091522;
-  --panel: rgba(11, 27, 42, 0.82);
-  --panel-solid: #0b1b2a;
-  --line: rgba(159, 190, 211, 0.18);
-  --line-strong: rgba(98, 246, 202, 0.4);
-  --text: #f4f8fb;
-  --muted: #9eb0bd;
-  --accent: #62f6ca;
-  --accent-dark: #062d25;
-  --warm: #ffcc66;
-  --danger: #ff7f8f;
-  --success: #62f6ca;
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+  color-scheme: light;
+  --bg: #f4f7fb;
+  --bg-elevated: #ffffff;
+  --panel: rgba(255, 255, 255, 0.94);
+  --panel-solid: #ffffff;
+  --line: #d9e2ec;
+  --line-strong: rgba(37, 99, 235, 0.42);
+  --text: #172033;
+  --muted: #607087;
+  --accent: #2563eb;
+  --accent-dark: #eff6ff;
+  --warm: #a16207;
+  --danger: #be4055;
+  --success: #16805b;
+  --shadow: 0 18px 48px rgba(38, 55, 77, 0.1);
   --radius-lg: 24px;
   --radius-md: 16px;
   --radius-sm: 10px;
@@ -35,8 +35,8 @@ body {
   margin: 0;
   color: var(--text);
   background:
-    radial-gradient(circle at 18% -8%, rgba(47, 123, 138, 0.28), transparent 34rem),
-    radial-gradient(circle at 90% 12%, rgba(255, 204, 102, 0.08), transparent 28rem),
+    radial-gradient(circle at 18% -8%, rgba(37, 99, 235, 0.1), transparent 34rem),
+    radial-gradient(circle at 90% 12%, rgba(14, 116, 144, 0.07), transparent 28rem),
     var(--bg);
   font-size: 16px;
   line-height: 1.5;
@@ -60,7 +60,7 @@ a:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
 select:focus-visible {
-  outline: 3px solid rgba(98, 246, 202, 0.4);
+  outline: 3px solid rgba(37, 99, 235, 0.28);
   outline-offset: 3px;
 }
 
@@ -79,7 +79,7 @@ select:focus-visible {
   gap: 24px;
   min-height: 82px;
   border-bottom: 1px solid var(--line);
-  background: rgba(5, 11, 18, 0.82);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(18px);
 }
 
@@ -99,7 +99,7 @@ select:focus-visible {
   border: 1px solid var(--line-strong);
   border-radius: 12px;
   color: var(--accent);
-  background: linear-gradient(145deg, rgba(98, 246, 202, 0.12), rgba(98, 246, 202, 0.02));
+  background: linear-gradient(145deg, #eff6ff, #ffffff);
   font-size: 1.2rem;
   font-weight: 800;
 }
@@ -147,19 +147,19 @@ select:focus-visible {
 }
 
 .button-primary {
-  color: #03120e;
+  color: #ffffff;
   background: var(--accent);
   font-weight: 760;
 }
 
 .button-primary:hover:not(:disabled) {
-  background: #8fffe0;
+  background: #1d4ed8;
 }
 
 .button-quiet {
   border-color: var(--line);
   color: var(--text);
-  background: rgba(255, 255, 255, 0.03);
+  background: #ffffff;
 }
 
 #refreshButton,
@@ -184,7 +184,7 @@ select:focus-visible {
   gap: 9px;
   border-color: var(--line);
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.025);
+  background: #ffffff;
   font-size: 0.88rem;
 }
 
@@ -198,12 +198,12 @@ select:focus-visible {
 
 .network-pill.connected .status-dot {
   background: var(--success);
-  box-shadow: 0 0 14px rgba(98, 246, 202, 0.6);
+  box-shadow: 0 0 12px rgba(22, 128, 91, 0.3);
 }
 
 .network-pill.wrong-network .status-dot {
   background: var(--danger);
-  box-shadow: 0 0 14px rgba(255, 127, 143, 0.6);
+  box-shadow: 0 0 12px rgba(190, 64, 85, 0.3);
 }
 
 .intro {
@@ -263,7 +263,7 @@ h3 {
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.025);
+  background: #ffffff;
 }
 
 .identity-card::before {
@@ -311,9 +311,9 @@ h3 {
 }
 
 .notice-warning {
-  border: 1px solid rgba(255, 204, 102, 0.25);
-  color: #ffe0a0;
-  background: rgba(255, 204, 102, 0.075);
+  border: 1px solid #f1d39a;
+  color: #744b05;
+  background: #fff8e8;
 }
 
 .notice code {
@@ -326,7 +326,7 @@ h3 {
   margin: 28px 0;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
-  background: rgba(7, 19, 31, 0.66);
+  background: rgba(255, 255, 255, 0.9);
   box-shadow: var(--shadow);
 }
 
@@ -373,7 +373,7 @@ h3 {
 
 .create-panel {
   background:
-    linear-gradient(145deg, rgba(98, 246, 202, 0.06), transparent 48%),
+    linear-gradient(145deg, rgba(37, 99, 235, 0.045), transparent 48%),
     var(--panel);
 }
 
@@ -409,7 +409,7 @@ label {
   justify-content: space-between;
   gap: 12px;
   margin-top: 6px;
-  color: #dce7ed;
+  color: var(--text);
   font-size: 0.88rem;
   font-weight: 680;
 }
@@ -426,7 +426,7 @@ select {
   border: 1px solid var(--line);
   border-radius: 12px;
   color: var(--text);
-  background: rgba(2, 9, 15, 0.68);
+  background: #ffffff;
 }
 
 input,
@@ -443,7 +443,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-  color: #637683;
+  color: #8a98aa;
 }
 
 input:focus,
@@ -460,7 +460,7 @@ select:focus {
   padding: 19px;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
-  background: rgba(0, 0, 0, 0.12);
+  background: #f8fafc;
 }
 
 .transaction-state strong,
@@ -486,7 +486,7 @@ select:focus {
   place-items: center;
   border-radius: 10px;
   color: var(--accent);
-  background: rgba(98, 246, 202, 0.09);
+  background: #eff6ff;
   font-size: 1.3rem;
 }
 
@@ -496,7 +496,7 @@ select:focus {
 
 .transaction-state.error .transaction-icon {
   color: var(--danger);
-  background: rgba(255, 127, 143, 0.09);
+  background: #fff1f3;
 }
 
 @keyframes pulse {
@@ -566,7 +566,7 @@ select:focus {
   padding: 26px;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
-  background: linear-gradient(105deg, rgba(98, 246, 202, 0.035), rgba(255, 255, 255, 0.018));
+  background: #ffffff;
 }
 
 .proposal-meta {
@@ -643,18 +643,18 @@ select:focus {
 
 .button-support {
   color: var(--accent);
-  background: rgba(98, 246, 202, 0.08);
+  background: #eff6ff;
 }
 
 .button-oppose {
-  color: #ffacb7;
-  background: rgba(255, 127, 143, 0.08);
+  color: var(--danger);
+  background: #fff1f3;
 }
 
 .button-finalize {
   grid-column: 1 / -1;
   color: var(--warm);
-  background: rgba(255, 204, 102, 0.07);
+  background: #fff8e8;
 }
 
 .voted-note {
@@ -700,7 +700,7 @@ select:focus {
   min-height: 230px;
   padding: 26px;
   border-right: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.018);
+  background: #ffffff;
 }
 
 .explain-grid article:last-child {
@@ -730,7 +730,7 @@ select:focus {
   margin-top: 16px;
   padding: 22px 24px;
   border-left: 3px solid var(--warm);
-  background: rgba(255, 204, 102, 0.045);
+  background: #fff8e8;
 }
 
 footer {
@@ -768,7 +768,7 @@ footer {
 }
 
 .toast.error {
-  border-color: rgba(255, 127, 143, 0.55);
+  border-color: rgba(190, 64, 85, 0.45);
 }
 
 .hidden {

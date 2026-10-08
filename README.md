@@ -4,6 +4,10 @@ CampusDAO is a transparent proposal-voting DApp deployed on Ethereum Sepolia. Us
 
 > This is a classroom prototype. It demonstrates one-address-one-vote, not one-human-one-vote, and it is not intended for official or secret elections.
 
+## Live demo
+
+[Open CampusDAO](https://lichterxxx.github.io/CampusDAO-DApp/)
+
 ## Sepolia deployment
 
 - Contract: [`0xa9b0d7787ac3a76af2c4533bc33c237677004f19`](https://sepolia.etherscan.io/address/0xa9b0d7787ac3a76af2c4533bc33c237677004f19)
@@ -50,6 +54,8 @@ The frontend is only an interface. The source of truth is the deployed contract.
 
 ```text
 campusdao-dapp/
+├── .github/workflows/
+│   └── pages.yml
 ├── contracts/
 │   ├── CampusDAO.sol
 │   └── CampusDAO.abi.json
@@ -61,13 +67,9 @@ campusdao-dapp/
 │   ├── favicon.svg
 │   └── vendor/
 │       └── ethers.umd.min.js
-├── .openai/
-│   └── hosting.json
 ├── scripts/
 │   └── serve.mjs
 ├── TEST_REPORT.md
-├── PROJECT_OUTLINE.md
-├── SUBMISSION.md
 ├── README.md
 └── .gitignore
 ```
